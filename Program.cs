@@ -17,6 +17,22 @@ void arrayif(string[] array1, string[] array2)
             if(array1[i].Length <=3)
             {
                 array2[count] = array1[i];
+                count++;
             }
         }
 }
+
+// Алгоритм вывода полученного результата на экран
+
+void printres(string[] arrayres)
+{
+    for (int i = 0; i < arrayres.Length; i++)
+    {
+        Console.WriteLine($"{arrayres[i]}");
+
+    }
+   
+} 
+
+arrayif (array1, array2);
+printres (array2);
