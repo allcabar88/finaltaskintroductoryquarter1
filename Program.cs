@@ -4,7 +4,16 @@
 не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами. */
 
 // устанавливаем начальное значение массива слов 
-string[] array1 = new string[7]{"123244", "hi", "Russia", "love", "ra", "UAZ", "git"};
+//string[] array1 = new string[7]{"123244", "hi", "Russia", "love", "ra", "UAZ", "git"};
+// Вводим значение с клавиатуры
+  Console.WriteLine("Введите любые 10 слов через Enter:");
+            string[] array1 = new string[10];
+            for (int i = 0; i < array1.Length; i++)
+            {
+                array1[i] = Console.ReadLine();
+            }
+
+
 // отношение второго массива к первому по длине 
 string[] array2 = new string [array1.Length];
 
@@ -24,11 +33,14 @@ void arrayif(string[] array1, string[] array2)
 
 // Алгоритм вывода полученного результата на экран
 
+
 void printres(string[] arrayres)
 {
     for (int i = 0; i < arrayres.Length; i++)
+
+    
     {
-        Console.WriteLine($"{arrayres[i]}");
+        Console.Write($"{arrayres[i]}    ");
 
     }
    
